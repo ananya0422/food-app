@@ -58,7 +58,3 @@ food-app/
 ## 🙋‍♀️ Author
 
 * **Ananya**
-
-## 📄 License
-
-This project is licensed under the MIT License.
