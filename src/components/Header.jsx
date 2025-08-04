@@ -80,7 +80,7 @@ const handlelogOut =  (e) =>{
               {/* Logo */}
               <div>
                 <img
-                  src="https://assets.zenn.com/strapi_assets/food_logo_5fbb88038c.png"
+                  src="https://i.pinimg.com/1200x/b1/fc/bb/b1fcbbfd4fb8116c714ef352bb39bbaf.jpg"
                   className="h-14 w-14 rounded-full object-cover"
                   alt="logo"
                 />

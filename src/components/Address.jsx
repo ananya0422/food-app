@@ -261,7 +261,7 @@ const handleDeliveryAddress = async()=>{
       
       </div>
       </div>
- <div className='bg-orange-600 p-2 m-4 flex justify-center'>
+ <div className='bg-orange-600 p-2 m-4 flex justify-center' onClick={()=> navigate('/cart')}>
       <button className='text-md font-bold text-white'>Place Order</button>
       
       </div>

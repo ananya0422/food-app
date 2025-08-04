@@ -16,6 +16,7 @@ const Cart = () => {
 
   const[username,setUsername] = useState('');
   const deliveryRef= useRef(null);
+  const navigate = useNavigate();
   
   
 
@@ -41,18 +42,20 @@ const [Email,setEmail] =useState('');
 
 
 
-   const navigate = useNavigate();
+  
 
 
   return (
     
 
 
-    <div className='flex justify-center items-center bg-gray-300   ' >
+    // <div className='flex justify-center items-start bg-gray-300 h-204 py-10 ' >
+    <div className="bg-gray-300 min-h-screen flex flex-col items-center py-10">
+
 
       
 
-        <div className='h-svw' >
+        <div className='min-h-full' >
           
 
             <div className='bg-white mt-5 p-10 flex gap-5 overflow-hidden  '>
@@ -94,7 +97,7 @@ const [Email,setEmail] =useState('');
                 className='h-30 w-30 rounded-full'/>
                 </div>
             </div> 
-<div>
+<div onClick={()=>navigate('/Address')}>
 <div className='mt-5  bg-white p-8 flex '  ref={deliveryRef} >
 <IoLocationOutline size={32} className='animate-pulse'/>
  <span className='text-gray-800 ml-9'>Delivery</span>
@@ -115,8 +118,12 @@ const [Email,setEmail] =useState('');
         </div>
 
 
-        <div className='ml-5 h-svw '>
-  <div className='m-10 bg-white w-5/6  rounded-xl p-5 h-100 overflow-y-scroll '> 
+        {/* <div className='ml-5 h-svw '> */}
+        <div className="ml-5 flex flex-col max-h-[90vh] overflow-hidden">
+
+  {/* <div className='m-10 bg-white w-5/6  rounded-xl p-5 h-100 overflow-y-scroll '>  */}
+  <div className="m-10 bg-white w-5/6 rounded-xl p-5 overflow-y-auto max-h-[60vh]">
+
   <div className='flex gap-5 '>
 <h2 className='text-4xl font-bold text-gray-600 mb-5 animate-pulse  '>Your Cart</h2>
 <div className='relative'>
@@ -187,6 +194,10 @@ const [Email,setEmail] =useState('');
 }
 
 export default Cart
+
+
+
+
 
 
 
