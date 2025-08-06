@@ -50,19 +50,19 @@ const [Email,setEmail] =useState('');
 
 
     // <div className='flex justify-center items-start bg-gray-300 h-204 py-10 ' >
-    <div className="bg-gray-300 min-h-screen flex flex-col items-center py-10">
+    <div className="bg-gray-300 min-h-screen flex flex-row items-start py-10">
 
 
       
 
-        <div className='min-h-full' >
+        <div className='min-h-full m-5 ' >
           
 
-            <div className='bg-white mt-5 p-10 flex gap-5 overflow-hidden  '>
+            <div className='bg-white  p-10 flex gap-5 overflow-hidden mt-3  '>
               
                {!token?(
                
-               <div className='h-35'>
+               <div className='h-35 w-1/3 '>
                 
                 <div className='flex gap-5 '>
               <VscAccount size={32} className='animate-pulse'/>
@@ -122,7 +122,7 @@ const [Email,setEmail] =useState('');
         <div className="ml-5 flex flex-col max-h-[90vh] overflow-hidden">
 
   {/* <div className='m-10 bg-white w-5/6  rounded-xl p-5 h-100 overflow-y-scroll '>  */}
-  <div className="m-10 bg-white w-5/6 rounded-xl p-5 overflow-y-auto max-h-[60vh]">
+  <div className="m-10 bg-white w-2/3 rounded-xl p-5 overflow-y-auto max-h-[60vh]">
 
   <div className='flex gap-5 '>
 <h2 className='text-4xl font-bold text-gray-600 mb-5 animate-pulse  '>Your Cart</h2>
@@ -181,7 +181,7 @@ const [Email,setEmail] =useState('');
 
 
 
- <div className=' ml-10 font-mono text-2xl mt-0 bg-white rounded-xl p-5  hover:scale-y-150 shadow-2xl shadow-white '>
+ <div className=' ml-15 font-mono text-xl mt-0 bg-white rounded-xl p-3  hover:scale-y-150 shadow-xl shadow-white w-1/2'>
  <p>Grand-Total : ₹{grandTotal}</p>
 </div>
 
